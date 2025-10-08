@@ -12,7 +12,7 @@ export default function Testimonials() {
       name: "Esther Howard",
       title: "Chief Executive Officer of GIGL",
       text: "Kevin is very hard and great worker. He thinks about problems, finds solutions, and has an awesome working morale.",
-      avatar: "/image2.png",
+      avatar: "/Image2.png",
       ringClass: "ring-green-300",
     },
     {
@@ -20,7 +20,7 @@ export default function Testimonials() {
       name: "Cameron Williamson",
       title: "Chief Executive Officer of GIGL",
       text: "Kevin did a wonderful job animating a set of static stickers. The work was done quickly and the quality was outstanding.",
-      avatar: "/image1.png",
+      avatar: "/Image1.png",
       ringClass: "ring-blue-300",
     },
     {
@@ -28,7 +28,7 @@ export default function Testimonials() {
       name: "Savannah Nguyen",
       title: "Chief Executive Officer of GIGL",
       text: "Great designer, does amazing work and is very flexible with changes. If you’re looking for a UI/UX designer, Kevin is well qualified.",
-      avatar: "/image3.png",
+      avatar: "/Image3.png",
       ringClass: "ring-gray-300",
     },
   ];

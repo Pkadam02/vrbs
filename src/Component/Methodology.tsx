@@ -5,11 +5,11 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Process: React.FC = () => {
   const steps = [
-    { id: 1, img: "/link1.png", title: "Strategic Planning", description: "with End Goals in Mind" },
-    { id: 2, img: "/link2.png", title: "Precision Targeting", description: "for Maximum Impact" },
-    { id: 3, img: "/link3.png", title: "Multi-Channel\nContent Distribution", description: "" },
-    { id: 4, img: "/link4.png", title: "Technology Enablement", description: "for Scale – Web and SAP\ndevelopment integrated into\nyour acquisition funnel" },
-    { id: 5, img: "/link5.png", title: "Continuous Optimisation", description: "for Better Results" },
+    { id: 1, img: "/Link1.png", title: "Strategic Planning", description: "with End Goals in Mind" },
+    { id: 2, img: "/Link2.png", title: "Precision Targeting", description: "for Maximum Impact" },
+    { id: 3, img: "/Link3.png", title: "Multi-Channel\nContent Distribution", description: "" },
+    { id: 4, img: "/Link4.png", title: "Technology Enablement", description: "for Scale – Web and SAP\ndevelopment integrated into\nyour acquisition funnel" },
+    { id: 5, img: "/Link5.png", title: "Continuous Optimisation", description: "for Better Results" },
   ];
 
   useEffect(() => {

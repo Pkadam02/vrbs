@@ -30,7 +30,7 @@ export default function HeroSection() {
       className="
         relative overflow-hidden bg-[#FFD700]
         flex flex-col md:flex-row items-center justify-between
-        px-4 sm:px-8 md:px-12 lg:px-20 py-20
+        px-4 sm:px-8 md:px-12 lg:px-20 py-32
         w-full min-h-[90vh]
       "
     >
@@ -40,7 +40,7 @@ export default function HeroSection() {
           className="
             hero-text
             font-poppins font-bold 
-            text-[3.5rem] sm:text-5xl md:text-6xl lg:text-7xl 
+            text-[3.5rem] sm:text-5xl md:text-6xl lg:text-8xl 
             leading-[1.1]
             text-[#1C1C57]
           "

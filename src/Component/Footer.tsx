@@ -50,15 +50,7 @@ export default function Footer() {
           {/* Logo and Contact Info Section */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left col-span-1 sm:col-span-2 lg:col-span-1 mb-8 sm:mb-0 footer-logo-contact">
             <img src="title2.png" alt="VR Business Solutions" className="h-12 mb-4" />
-            <p className="text-gray-400 text-sm leading-relaxed">
-              66 West Flagler Street - Suite 900 Miami, FL 33130, USA.
-            </p>
-            <p className="text-gray-400 text-sm mt-2">
-              +1 786 406 6061
-            </p>
-            <p className="text-gray-400 text-sm">
-              E: contact@vr-bs.com
-            </p>
+            
           </div>
 
           {/* Hawaii Main Office */}
@@ -68,6 +60,15 @@ export default function Footer() {
               <li>66 West Flagler Street -</li>
               <li>Suite 900 Miami, FL 33130,</li>
               <li>USA.</li>
+              <p className="text-gray-400 text-sm leading-relaxed">
+              66 West Flagler Street - Suite 900 Miami, FL 33130, USA.
+            </p>
+            <p className="text-gray-400 text-sm mt-2">
+              +1 786 406 6061
+            </p>
+            <p className="text-gray-400 text-sm">
+              E: contact@vr-bs.com
+            </p>
             </ul>
           </div>
 

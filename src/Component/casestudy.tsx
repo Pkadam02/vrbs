@@ -19,7 +19,7 @@ const CaseStudies: React.FC = () => {
       title: "From Zero to 85K: Scaling Cloud-VoIP in a Pandemic Year",
       description:
         "A prominent Voice over Internet Protocol (VoIP) solutions provider in the US approached VR Business Solution to identify the service needs of targeted industries and expand its business reach. With an aim to consolidate Cloud with VoIP and provide a winning solution for efficient business performance, the company was looking for a partner to introduce and distribute Cloud-based VoIP architecture.",
-      img: "overlay.png",
+      img: "/Overlay.png",
       buttonText: "Know More",
     },
   ];
