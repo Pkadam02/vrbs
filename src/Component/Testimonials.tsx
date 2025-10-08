@@ -49,7 +49,7 @@ export default function Testimonials() {
       }, 5000);
     }
     return () => resetTimeout();
-  }, [current, autoplay]);
+  }, [current, autoplay, testimonials.length]);
 
   // GSAP Animations
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function Testimonials() {
     );
 
     // Animate testimonial cards (initial fade-in)
-    gsap.utils.toArray(".testimonial-item").forEach((item: any, index) => {
+    (gsap.utils.toArray(".testimonial-item") as HTMLElement[]).forEach((item, index) => {
       gsap.fromTo(item, 
         { opacity: 0, y: 50 },
         { 

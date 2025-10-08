@@ -22,7 +22,7 @@ export default function Services() {
       );
 
       // Animate service cards
-      gsap.utils.toArray(".service-card").forEach((card: any, index) => {
+      (gsap.utils.toArray(".service-card") as HTMLElement[]).forEach((card, index) => {
         gsap.fromTo(card, 
           { opacity: 0, y: 50 },
           { 

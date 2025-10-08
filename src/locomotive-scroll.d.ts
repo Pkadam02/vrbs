@@ -29,7 +29,7 @@ declare module 'locomotive-scroll' {
 
   class LocomotiveScroll {
     constructor(options?: LocomotiveScrollOptions);
-    on(event: string, callback: (...args: any[]) => void): void;
+    on(event: string, callback: (...args: unknown[]) => void): void;
     destroy(): void;
     update(): void;
     scrollTo(target: number | HTMLElement | string, offset?: number, duration?: number): void;

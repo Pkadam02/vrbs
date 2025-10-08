@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins, Archivo } from "next/font/google";
-import SmoothScroll from "@/smooth-scroll-gsap/SmoothScroll";
+// import SmoothScroll from "@/smooth-scroll-gsap/SmoothScroll";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"], variable: '--font-poppins' });
 const archivo = Archivo({ subsets: ["latin"], weight: ["400"], variable: '--font-archivo' });

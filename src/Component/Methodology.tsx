@@ -29,7 +29,7 @@ const Process: React.FC = () => {
     );
 
     // Animate methodology cards
-    gsap.utils.toArray(".methodology-card").forEach((card: any, index) => {
+    (gsap.utils.toArray(".methodology-card") as HTMLElement[]).forEach((card, index) => {
       gsap.fromTo(card, 
         { opacity: 0, y: 50 },
         { 

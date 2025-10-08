@@ -35,7 +35,7 @@ export default function WhoWeAre() {
     );
 
     // Animate text content (paragraphs and list)
-    gsap.utils.toArray(".whoweare-text-content > *:not(h2)").forEach((element: any, index) => {
+    (gsap.utils.toArray(".whoweare-text-content > *:not(h2)") as HTMLElement[]).forEach((element, index) => {
       gsap.fromTo(element, 
         { opacity: 0, y: 30 },
         { 

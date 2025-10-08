@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -86,9 +87,12 @@ export default function About() {
 
           {/* Right Visual / Charts */}
           <div className="about-fade">
-            <img
+            <Image
               src="/about1.png"
               alt="about Illustration"
+              width={500} // Placeholder, adjust as needed
+              height={300} // Placeholder, adjust as needed
+              priority={true}
               className="w-full h-auto max-w-full object-contain"
             />
           </div>

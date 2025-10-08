@@ -26,7 +26,7 @@ export const useGsapAnimations = () => {
     requestAnimationFrame(raf);
 
     // 🎞️ Fade-in animation for sections
-    gsap.utils.toArray(".fade-in").forEach((el: any) => {
+    (gsap.utils.toArray(".fade-in") as HTMLElement[]).forEach((el) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,

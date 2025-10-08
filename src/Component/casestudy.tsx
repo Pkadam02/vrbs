@@ -41,7 +41,7 @@ const CaseStudies: React.FC = () => {
     );
 
     // Animate each case study card
-    gsap.utils.toArray(".casestudy-card").forEach((card: any, index) => {
+    (gsap.utils.toArray(".casestudy-card") as HTMLElement[]).forEach((card, index) => {
       gsap.fromTo(card, 
         { opacity: 0, y: 50 },
         { 
