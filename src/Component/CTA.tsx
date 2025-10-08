@@ -72,7 +72,7 @@ export default function CTA() {
           {/* Right Illustration */}
           <div className="relative flex justify-center items-center h-full">
             {/* Main person image */}
-            <img src="/cta.png" alt="Person with Tablet" className="absolute bottom-[-70px] lg:bottom-[-450px] right-[-16px] md:right-[-35px] h-auto max-h-[1200px] md:max-h-[1400px] lg:h-[1250px] object-contain w-[180%] md:w-[130%] lg:w-[100%]" />
+            <img src="/CTA.png" alt="Person with Tablet" className="absolute bottom-[-70px] lg:bottom-[-450px] right-[-16px] md:right-[-35px] h-auto max-h-[1200px] md:max-h-[1400px] lg:h-[1250px] object-contain w-[180%] md:w-[130%] lg:w-[100%]" />
 
             {/* Floating Card 1 */}
             
