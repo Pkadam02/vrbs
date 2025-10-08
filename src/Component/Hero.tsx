@@ -45,7 +45,7 @@ export default function HeroSection() {
             text-[#1C1C57]
           "
         >
-          We generate <br /> leads <br /> through true <br /> intent
+          We Generate <br /> Leads <br /> Through True <br /> Intent
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 mt-6 mb-8 max-w-md mx-auto md:mx-0">
