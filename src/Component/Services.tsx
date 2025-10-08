@@ -1,0 +1,206 @@
+"use client";
+import gsap from "gsap";
+import { useEffect } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+export default function Services() {
+
+    useEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate section title
+      gsap.fromTo(
+        "#services h2",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out",
+          scrollTrigger: {
+            trigger: "#services h2",
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          }
+        }
+      );
+
+      // Animate service cards
+      gsap.utils.toArray(".service-card").forEach((card: any, index) => {
+        gsap.fromTo(card, 
+          { opacity: 0, y: 50 },
+          { 
+            opacity: 1, 
+            y: 0, 
+            duration: 0.8, 
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 85%",
+              toggleActions: "play none none reverse",
+            },
+            delay: index * 0.1 // Stagger the animation
+          }
+        );
+      });
+
+      // Animate "Know More" button
+      gsap.fromTo(
+        ".services-know-more-btn",
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 0.8, ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".services-know-more-btn",
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          }
+        }
+      );
+  
+      // Smooth scroll for buttons with 'scroll-to-services' class (if any)
+      const buttons = document.querySelectorAll(".scroll-to-services");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const element = document.getElementById("services");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    }, []);
+  
+  return (
+    <section id="services" className="py-12 md:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Title */}
+        <div className="text-center mb-10 md:mb-16">
+          <p className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wide">
+            Our Services
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-1 sm:mt-2">
+            We Provide Best Services
+          </h2>
+        </div>
+
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="/demand-generation.png"
+                alt="Demand Generation"
+                className="w-45 h-55 object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Demand Generation
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              Using the AIDA methodology (Attention, Interest, Desire, Action),
+              we ensure every campaign captures attention, nurtures interest,
+              builds desire, and drives measurable action.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="/content-syndication.png"
+                alt="Content Syndication"
+                className="w-55 h-55 object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Content Syndication
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              We amplify your content’s reach by distributing it across trusted
+              industry platforms, networks, and targeted databases.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="/buyer-intent.png"
+                alt="Buyer Intent Leads"
+                className="w-80 h-60 rounded-2xl object-cover"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Buyer Intent Leads
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              Through our proprietary publishing network, we gather verified
+              first-party intent data by tracking clicks, downloads, and other
+              behavioral signals that indicate buying readiness.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="webinar.png"
+                alt="Event & Webinar Registrations"
+                className="w-60 h-60 object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Event & Webinar Registrations
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              We manage end-to-end attendee acquisition for your events and
+              webinars, targeting professionals most likely to benefit from your
+              solutions.
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="/abm.png"
+                alt="Account-Based Marketing"
+                className="w-50 h-50 object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Account-Based Marketing (ABM)
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              We develop personalized, high-touch campaigns aimed at your most
+              valuable target accounts, aligning sales and marketing efforts for
+              maximum impact.
+            </p>
+          </div>
+
+          {/* Card 6 */}
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+            <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+              <img
+                src="software-dev.png"
+                alt="Software Development"
+                className="w-60 h-40 object-cover rounded-2xl"
+              />
+            </div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              Software Development
+            </h3>
+            <p className="text-gray-600 text-sm sm:text-base">
+              Our team delivers custom, scalable, and secure software solutions
+              — from modern web apps to enterprise systems that optimize your
+              workflows and enable digital transformation.
+            </p>
+          </div>
+        </div>
+
+        {/* Button */}
+        <div className="text-center mt-12">
+          <button className="bg-[#1C1C57] text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto services-know-more-btn">
+            Know More
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
