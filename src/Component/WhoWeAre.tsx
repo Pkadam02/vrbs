@@ -11,7 +11,7 @@ export default function WhoWeAre() {
     // Animate section title
     gsap.fromTo(
       ".whoweare-title",
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: -200 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out",
         scrollTrigger: {
           trigger: ".whoweare-title",
@@ -24,8 +24,8 @@ export default function WhoWeAre() {
     // Animate image
     gsap.fromTo(
       ".whoweare-image",
-      { opacity: 0, x: -50 },
-      { opacity: 1, x: 0, duration: 1, ease: "power3.out",
+      { opacity: 0, x: -900 },
+      { opacity: 1, x: 0, duration: 2.8, ease: "power3.out",
         scrollTrigger: {
           trigger: ".whoweare-image",
           start: "top 85%",
@@ -37,11 +37,11 @@ export default function WhoWeAre() {
     // Animate text content (paragraphs and list)
     (gsap.utils.toArray(".whoweare-text-content > *:not(h2)") as HTMLElement[]).forEach((element, index) => {
       gsap.fromTo(element, 
-        { opacity: 0, y: 30 },
+        { opacity: 0, x: 900 },
         { 
           opacity: 1, 
-          y: 0, 
-          duration: 0.8, 
+          x: 0, 
+          duration: 1.8, 
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,
@@ -56,7 +56,7 @@ export default function WhoWeAre() {
     // Animate button
     gsap.fromTo(
       ".whoweare-btn",
-      { opacity: 0, y: 50 },
+      { opacity: 1, y: 50 },
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out",
         scrollTrigger: {
           trigger: ".whoweare-btn",
@@ -69,7 +69,9 @@ export default function WhoWeAre() {
   }, []);
 
   return (
-    <section className="py-12 md:py-20 bg-white">
+    <section className="py-12 md:py-20 relative overflow-hidden bg-white
+        flex flex-col md:flex-row items-center justify-between
+        px-4 sm:px-8 md:px-12 lg:px-20 w-full min-h-[90vh]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-y-8 md:gap-x-12 items-start">
           

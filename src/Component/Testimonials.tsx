@@ -58,8 +58,8 @@ export default function Testimonials() {
     // Animate header elements
     gsap.fromTo(
       ".testimonial-header-pretitle",
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, ease: "power2.out",
+      { opacity: 0, x: 600 },
+      { opacity: 1, x: 0, duration: 0.8, ease: "power2.out",
         scrollTrigger: {
           trigger: ".testimonial-header-pretitle",
           start: "top 85%",
@@ -70,7 +70,7 @@ export default function Testimonials() {
 
     gsap.fromTo(
       ".testimonial-header-title",
-      { opacity: 0, y: 30 },
+      { opacity: 0, y: 50 },
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out", delay: 0.2,
         scrollTrigger: {
           trigger: ".testimonial-header-title",
@@ -82,7 +82,7 @@ export default function Testimonials() {
 
     gsap.fromTo(
       ".testimonial-header-description",
-      { opacity: 0, y: 30 },
+      { opacity: 0, y: 300 },
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out", delay: 0.4,
         scrollTrigger: {
           trigger: ".testimonial-header-description",
@@ -95,7 +95,7 @@ export default function Testimonials() {
     // Animate testimonial cards (initial fade-in)
     (gsap.utils.toArray(".testimonial-item") as HTMLElement[]).forEach((item, index) => {
       gsap.fromTo(item, 
-        { opacity: 0, y: 50 },
+        { opacity: 0, y: 800 },
         { 
           opacity: 1, 
           y: 0, 

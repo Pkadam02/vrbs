@@ -18,7 +18,7 @@ export default function Partners() {
 
     gsap.fromTo(
       fadeEls,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 200 },
       {
         opacity: 1,
         y: 0,
@@ -41,6 +41,7 @@ export default function Partners() {
 
   return (
     <section
+      id="partners"
       ref={sectionRef}
       className="py-8 md:py-12 bg-white"
       data-scroll-section

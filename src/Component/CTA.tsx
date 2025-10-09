@@ -13,7 +13,7 @@ export default function CTA() {
     // Animate the main heading
     gsap.fromTo(
       "#cta h2",
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: -500 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out",
         scrollTrigger: {
           trigger: "#cta h2",
@@ -39,7 +39,7 @@ export default function CTA() {
     // Animate the main image
     gsap.fromTo(
       "#cta img",
-      { opacity: 0, x: 50 },
+      { opacity: 0, x: 900 },
       { opacity: 1, x: 0, duration: 1, ease: "power3.out", delay: 0.4,
         scrollTrigger: {
           trigger: "#cta img",
@@ -52,14 +52,14 @@ export default function CTA() {
   }, []);
 
   return (
-    <section id="cta" className="relative py-16 md:py-[1] bg-yellow-300 overflow-hidden min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
+    <section id="cta" className="relative py-16 md:py-[28] bg-yellow-300 overflow-hidden min-h-[900px] md:min-h-[1000px] lg:min-h-[10px]">
       {/* Blue curved background */}
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-48 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center min-h-[600px]">
           {/* Left Content */}
           <div className="py-10 md:py-0">
-            <h1 className="text-4xl sm:text-2xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-2xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Ready To <br />
               Accelerate Growth <br /> & Modernize Your
               <br />Tech?
@@ -72,7 +72,7 @@ export default function CTA() {
           {/* Right Illustration */}
           <div className="relative flex justify-center items-center h-full">
             {/* Main person image */}
-            <img src="/CTA.png" alt="Person with Tablet" className="absolute bottom-[-70px] lg:bottom-[-450px] right-[-16px] md:right-[-35px] h-auto max-h-[1200px] md:max-h-[1400px] lg:h-[1250px] object-contain w-[180%] md:w-[130%] lg:w-[100%]" />
+            <img src="/CTA.png" alt="Person with Tablet" className="absolute bottom-[-240px] lg:bottom-[-432px] right-[-16px] md:right-[-192px] h-auto max-h-[1200px] md:max-h-[1400px] lg:h-[1250px] object-contain w-[180%] md:w-[130%] lg:w-[500%]" />
 
             {/* Floating Card 1 */}
             

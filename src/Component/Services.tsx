@@ -11,8 +11,8 @@ export default function Services() {
       // Animate section title
       gsap.fromTo(
         "#services h2",
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: "power3.out",
+        { opacity: 0, y: 300 },
+        { opacity: 1, y: 0, duration: 1.7, ease: "power3.out",
           scrollTrigger: {
             trigger: "#services h2",
             start: "top 85%",
@@ -23,16 +23,20 @@ export default function Services() {
 
       // Animate service cards
       (gsap.utils.toArray(".service-card") as HTMLElement[]).forEach((card, index) => {
+        const animationProps = index < 3 
+          ? { opacity: 0, x: -700 } // First 3 cards from left
+          : { opacity: 0, x: 700 };  // Last 3 cards from right
+
         gsap.fromTo(card, 
-          { opacity: 0, y: 50 },
+          animationProps,
           { 
             opacity: 1, 
-            y: 0, 
-            duration: 0.8, 
-            ease: "power2.out",
+            x: 0, 
+            duration: 2.8, 
+            ease: "power3.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 85%",
+              start: "top 100%",
               toggleActions: "play none none reverse",
             },
             delay: index * 0.1 // Stagger the animation
@@ -43,8 +47,8 @@ export default function Services() {
       // Animate "Know More" button
       gsap.fromTo(
         ".services-know-more-btn",
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power2.out",
+        { opacity: 0, y: 200 },
+        { opacity: 1, y: 0, duration: 1.8, ease: "power2.out",
           scrollTrigger: {
             trigger: ".services-know-more-btn",
             start: "top 85%",
@@ -66,7 +70,10 @@ export default function Services() {
     }, []);
   
   return (
-    <section id="services" className="py-12 md:py-20 bg-white">
+    <section id="services" className="relative overflow-hidden bg-white
+        flex flex-col md:flex-row items-center justify-between
+        px-4 sm:px-8 md:px-12 lg:px-20 py-25
+        w-full min-h-[90vh]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-10 md:mb-16">

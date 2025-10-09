@@ -8,29 +8,42 @@ export default function HeroSection() {
     // GSAP Animation on mount
     gsap.fromTo(
       ".hero-text",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" }
+      { opacity: 800, y: 500 },
+      { opacity: 1, y: 5, duration: 1.5, ease: "power3.out" }
     );
 
     gsap.fromTo(
       ".hero-image",
-      { opacity: 0, x: 100 },
+      { opacity: 90, x: 900 },
       { opacity: 1, x: 0, duration: 1.5, ease: "power3.out", delay: 0.3 }
     );
 
     gsap.fromTo(
       ".hero-buttons",
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.6 }
+      { opacity: 0, y: -900 }, // Animate from above
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 1.2 } // Adjusted delay
+    );
+
+    gsap.fromTo(
+      ".hero-word",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: "power2.out", delay: 0.2 }
+    );
+
+    gsap.fromTo(
+      ".hero-description",
+      { opacity: 0, x: -500 },
+      { opacity: 1, x: 0, duration: 1, ease: "power3.out", delay: 1.0 }
     );
   }, []);
 
   return (
     <section
+      id="hero"
       className="
         relative overflow-hidden bg-[#FFD700]
         flex flex-col md:flex-row items-center justify-between
-        px-4 sm:px-8 md:px-12 lg:px-20 py-32
+        px-4 sm:px-8 md:px-12 lg:px-20 py-25
         w-full min-h-[90vh]
       "
     >
@@ -40,24 +53,46 @@ export default function HeroSection() {
           className="
             hero-text
             font-poppins font-bold 
-            text-[3.5rem] sm:text-5xl md:text-6xl lg:text-8xl 
+            text-[3.7rem] sm:text-5xl md:text-6xl lg:text-8xl 
             leading-[1.1]
             text-[#1C1C57]
           "
         >
-          We Generate <br /> Leads <br /> Through True <br /> Intent
+          {"We Generate ".split(" ").map((word, index) => (
+            <span key={index} className="hero-word opacity-0">
+              {word + " "}
+            </span>
+          ))}
+          <br />
+          {"Leads ".split(" ").map((word, index) => (
+            <span key={index} className="hero-word opacity-0 inline-block">
+              {word + " "}
+            </span>
+          ))}
+          <br />
+          {"Through True ".split(" ").map((word, index) => (
+            <span key={index} className="hero-word opacity-0">
+              {word + " "}
+            </span>
+          ))}
+          <br className="mb-4"/>
+          {"Intent".split(" ").map((word, index) => (
+            <span key={index} className="hero-word opacity-0 inline-block">
+              {word + " "}
+            </span>
+          ))}
         </h1>
 
-        <p className="text-base sm:text-lg text-gray-700 mt-6 mb-8 max-w-md mx-auto md:mx-0">
+        <p className="hero-description text-base sm:text-lg text-gray-700 mt-6 mb-8 max-w-md mx-auto md:mx-0">
           Your Go To Performance Marketing Agency
         </p>
 
         {/* ===== CTA Buttons ===== */}
-        <div className="hero-buttons flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start w-full sm:w-auto">
-          <button className="bg-[#1C1C57] text-white px-8 py-3 font-semibold hover:opacity-90 transition border-2 border-[#1C1C57] w-full sm:w-auto rounded-md">
+        <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
+          <button className="bg-[#1C1C57] text-white px-8 py-3 font-semibold hover:opacity-90 transition border-2 border-[#1C1C57] w-full sm:w-auto">
             Book a Free Growth Call
           </button>
-          <button className="border-2 border-[#1C1C57] text-[#1C1C57] px-8 py-3 font-semibold hover:bg-[#1C1C57] hover:text-white transition w-full sm:w-auto rounded-md">
+          <button className="border-2 border-[#1C1C57] text-[#1C1C57] px-8 py-3 font-semibold hover:bg-[#1C1C57] hover:text-white transition w-full sm:w-auto">
             Get a call 📞
           </button>
         </div>

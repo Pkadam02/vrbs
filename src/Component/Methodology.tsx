@@ -18,8 +18,8 @@ const Process: React.FC = () => {
     // Animate section title
     gsap.fromTo(
       ".methodology-title",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out",
+      { opacity: 0, x: -500 },
+      { opacity: 1, x: 0, duration: 1, ease: "power3.out",
         scrollTrigger: {
           trigger: ".methodology-title",
           start: "top 85%",
@@ -31,11 +31,11 @@ const Process: React.FC = () => {
     // Animate methodology cards
     (gsap.utils.toArray(".methodology-card") as HTMLElement[]).forEach((card, index) => {
       gsap.fromTo(card, 
-        { opacity: 0, y: 50 },
+        { opacity: 5, x:900 },
         { 
           opacity: 1, 
-          y: 0, 
-          duration: 0.8, 
+          x: 0, 
+          duration: 1, 
           ease: "power2.out",
           scrollTrigger: {
             trigger: card,
@@ -52,18 +52,21 @@ const Process: React.FC = () => {
   const displaySteps = [null, ...steps]; // Add a null placeholder for the empty first box
 
   return (
-    <section className="py-20 bg-white" data-scroll-section>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-10  items-start">
+    <section id="methodology" className="py-5 bg-white relative overflow-hidden bg-white
+        flex flex-col md:flex-row items-center justify-between
+        px-0 sm:px-8 md:px-12 lg:px-20
+        w-full min-h-[90vh]md:py-20 bg-white" data-scroll-section>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-10 py-20 items-start">
         
         {/* ===== Left Section (Text Content) ===== */}
-        <div className="flex flex-col justify-start text-left lg:col-span-3">
-          <div className="relative lg:w-130 sm:w-80 lg:right-[-30] md:left-30 ">
+        <div className="flex flex-col justify-start text-left lg:col-span-3 lg:mt-8" >
+          <div className="relative lg:w-130 sm:w-80 md:left-5  ">
           <p className="text-gray-500 text-base font-semibold mb-2">
             Our Process
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 leading-snug methodology-title">
             Proven Methodology: <br /> Strategy + Technology
-          </h2></div>
+          </h2><br /></div>
         </div>
 
         {/* ===== Right Section (Unified Grid of Boxes with empty slot) ===== */}

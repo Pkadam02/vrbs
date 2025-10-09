@@ -42,13 +42,17 @@ const CaseStudies: React.FC = () => {
 
     // Animate each case study card
     (gsap.utils.toArray(".casestudy-card") as HTMLElement[]).forEach((card, index) => {
+      const fromProps = index === 0
+        ? { opacity: 0, x: -900 }   // First card from left
+        : { opacity: 0, x: 900 }; // Second card from right
+
       gsap.fromTo(card, 
-        { opacity: 0, y: 50 },
+        fromProps,
         { 
           opacity: 1, 
-          y: 0, 
-          duration: 0.8, 
-          ease: "power2.out",
+          x: 0, 
+          duration: 2.8, 
+          ease: "power3.out",
           scrollTrigger: {
             trigger: card,
             start: "top 85%",
@@ -62,8 +66,8 @@ const CaseStudies: React.FC = () => {
     // Animate "More Case Studies" button
     gsap.fromTo(
       ".casestudy-more-button",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.8, ease: "power2.out",
+      { opacity: 0, y: 900 },
+      { opacity: 1, y: 0, duration: 2, ease: "power3.out",
         scrollTrigger: {
           trigger: ".casestudy-more-button",
           start: "top 85%",
@@ -75,8 +79,14 @@ const CaseStudies: React.FC = () => {
   }, []);
 
   return (
-    <section id="casestudy" className="py-20 bg-white font-poppins">
+    <section id="casestudy" className="py-25 bg-white relative overflow-hidden bg-white
+        flex flex-col md:flex-row items-center justify-between
+        px-0 sm:px-8 md:px-12 lg:px-20 py-12
+        w-full min-h-[90vh]md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p className="text-gray-500 text-base font-semibold mb-5 text-center">
+            Case Study
+          </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-1 sm:mt-2 text-center mb-10 md:mb-16 casestudy-section-title">
           Our Case Studies
         </h2>
