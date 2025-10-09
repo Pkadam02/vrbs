@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from 'next/link'; // Import Link component
 
 export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }) {
   // const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
   return (
     <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 py-4 bg-yellow-300 text-[#1C1C57] border-b border-white">
       <div className="flex items-center space-x-2 lg:ml-20">
-        <a href="/" onClick={() => handleScrollToSection("hero")}>
+        <Link href="/" onClick={() => handleScrollToSection("hero")}> {/* Use Link component */}
           <img src="title.png" alt="VR Logo" className="h-10" />
-        </a>
+        </Link>
       </div>
 
       {/* Desktop navigation */}
