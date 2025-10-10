@@ -95,7 +95,7 @@ export default function Testimonials() {
     // Animate testimonial cards (initial fade-in)
     (gsap.utils.toArray(".testimonial-item") as HTMLElement[]).forEach((item, index) => {
       gsap.fromTo(item, 
-        { opacity: 0, y: 800 },
+        { opacity: 0, y: 600 },
         { 
           opacity: 1, 
           y: 0, 

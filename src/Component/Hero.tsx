@@ -52,7 +52,7 @@ export default function HeroSection() {
         <h1
           className="
             hero-text
-            font-poppins font-bold 
+            font-the-bold-font font-bold 
             text-[3.7rem] sm:text-5xl md:text-6xl lg:text-8xl 
             leading-[1.1]
             text-[#1C1C57]

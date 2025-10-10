@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'The Bold Font';
+  src: url('/THEBOLDFONT-FREEVERSION.otf') format('opentype'),
+       url('/THEBOLDFONT-FREEVERSION.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,4 +19,8 @@ body {
 
 .font-poppins {
   font-family: var(--font-poppins);
+}
+
+.font-the-bold-font {
+  font-family: 'The Bold Font', sans-serif;
 }
