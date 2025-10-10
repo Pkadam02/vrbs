@@ -71,21 +71,22 @@ export default function About() {
       id="about"
       className="relative overflow-hidden bg-white
         flex flex-col md:flex-row items-center justify-between
-        px-0 sm:px-8 md:px-12 lg:px-20 py-35
-        w-full min-h-[90vh]md:py-20 bg-white"
+        px-0 sm:px-8 md:px-12 lg:px-3 py-25
+        w-full min-h-[90vh] md:py-20 bg-white"
       data-scroll-section
     >
-      <div className="container mx-auto px-4 sm:px-10 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-5">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Left Text Content */}
-          <div className="space-y-2 lg:pl-16 about-text-content">
+          <div className="relative lg:top-[-80] space-y-2 lg:pl-16 about-text-content">
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
               About
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-bold text-gray-900 leading-tight">
               About VR <br />
               <span className="text-gray-900">Business Solution</span>
             </h2>
+            <p className="text-lg text-gray-700">Inform your customers about your features</p>
             <p className="text-base leading-relaxed text-gray-600">
               At VR Business Solution, we are pioneers in customer acquisition
               and targeted outreach, helping businesses connect with the right
@@ -106,25 +107,50 @@ export default function About() {
                 <span>Email marketing, digital marketing</span>
               </li>
             </ul>
-
-            <Link href="/aboutus" className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 lg:w-40 md:w-auto">
-              Know More
-              <span className="text-gray-500 text-xl">→</span>
-            </Link>
           </div>
 
-          {/* Right Visual / Charts */}
-          <div className="about-image-container lg:mt-8 ">
-            <Image
-              src="/about1.png"
-              alt="about Illustration"
-              width={500} // Placeholder, adjust as needed
-              height={300} // Placeholder, adjust as needed
-              priority={true}
-              className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl 
-            object-contain"
-            />
+          {/* Right Image/Dashboard */}
+          <div className="w-full flex flex-col items-center">
+          <div style={{width: "60%", maxWidth: "250%" , marginLeft: "110px", marginRight: "auto"}}>
+              <Image
+                src="/about2.jpg"
+                alt="Globe illustration"
+                width={1510}
+                height={705}
+                layout="responsive"
+                objectFit="cover"
+                style={{position:"relative", bottom:"1px", zIndex:99}}
+              />
+            </div>
+            <div style={{width: "150%", maxWidth: "150%" , marginLeft: "250px", marginRight: "auto" }}>
+              <Image
+                src="/globe.png"
+                alt="Globe illustration"
+                width={1510}
+                height={705}
+                layout="responsive"
+                objectFit="cover"
+                style={{position:"relative", bottom:"100px", left:"-500px"}}
+              />
+            </div>
           </div>
+        </div>
+
+        {/* Provided Content - About VR Business Solution */}
+        <div className="mt-20 py-10 px-8 bg-white rounded-lg shadow-md">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">About VR Business Solution</h2>
+          <p className="text-lg text-gray-700 mb-4">
+            At VR Business Solution, we are pioneers in customer acquisition and targeted outreach, helping businesses connect with the right audience&mdash;both online and offline. Our expertise spans lead generation, appointment setting, event registrations, email marketing, digital marketing, and a range of services designed to engage and convert your ideal prospects.
+          </p>
+          <p className="text-lg text-gray-700 mb-4">
+            We specialize in identifying and narrowing down your customer base, ensuring you focus only on high-quality prospects who are most likely to buy, return, and advocate for your brand.
+          </p>
+          <p className="text-lg text-gray-700 mb-4">
+            Our approach is smart, data-driven, and results-focused, enabling you to see measurable growth and profitability in a short span. With a proven and efficient delivery model, we ensure consistent, high-quality outcomes that exceed expectations.
+          </p>
+          <p className="text-lg text-gray-700">
+            At VR Business Solution, we are more than a service provider&mdash;we are your growth partner. Committed to delivering end-to-end solutions, we focus on building long-term partnerships where your success fuels our own. Together, we aim for sustainable growth and shared achievements.
+          </p>
         </div>
       </div>
     </section>
