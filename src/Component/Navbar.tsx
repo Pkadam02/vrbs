@@ -6,30 +6,23 @@ import Link from 'next/link'; // Import Link component
 export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }) {
   // const [isOpen, setIsOpen] = useState(false);
 
-  const handleScrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false); // Close mobile menu after clicking a link
-  };
+  // REMOVED handleScrollToSection function
 
   return (
-    <nav className="fixed top-0 w-full z-150 flex justify-between items-center px-4 py-4 bg-yellow-300 text-[#1C1C57] border-b border-white">
+    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 py-4 bg-yellow-300 text-[#1C1C57] border-b border-white">
       <div className="flex items-center space-x-2 lg:ml-20">
-        <Link href="/" onClick={() => handleScrollToSection("hero")}> {/* Use Link component */}
+        <Link href="/" onClick={() => setIsOpen(false)}> {/* Use Link component */}
           <img src="title.png" alt="VR Logo" className="h-10" />
         </Link>
       </div>
 
       {/* Desktop navigation */}
       <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 font-medium">
-        <li><a href="#services" onClick={() => handleScrollToSection("services")} className="hover:text-gray-300 transition-colors duration-200">Product</a></li>
-        <li><a href="#about" onClick={() => handleScrollToSection("about")} className="hover:text-gray-300 transition-colors duration-200">About</a></li>
-        <li><Link href="/aboutus" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">About Us</Link></li>
-        <li><a href="#methodology" onClick={() => handleScrollToSection("methodology")} className="hover:text-gray-300 transition-colors duration-200">Features</a></li>
-        <li><Link href="/contact" className="hover:text-gray-300 transition-colors duration-200">Contact</Link></li>
-        <li><a href="#casestudy" onClick={() => handleScrollToSection("casestudy")} className="hover:text-gray-300 transition-colors duration-200">Blog</a></li>
+      <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">About</Link></li>
+        <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Services</Link></li>
+        <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Methodology</Link></li>
+        <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Case Study</Link></li>
+        <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Contact Us</Link></li>
       </ul>
 
       <div className="hidden md:flex items-center gap-4 lg:mr-20">
@@ -58,12 +51,11 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
           </button>
         </div>
         <ul className="flex flex-col items-center space-y-6 font-medium py-6">
-          <li><a href="#services" onClick={() => handleScrollToSection("services")} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Product</a></li>
-          <li><a href="#about" onClick={() => handleScrollToSection("about")} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">About</a></li>
-          <li><Link href="/aboutus" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">About Us</Link></li>
-          <li><a href="#methodology" onClick={() => handleScrollToSection("methodology")} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Features</a></li>
-          <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Contact</Link></li>
-          <li><a href="#casestudy" onClick={() => handleScrollToSection("casestudy")} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Blog</a></li>
+        <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">About</Link></li>
+          <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Services</Link></li>
+          <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Methodology</Link></li>
+          <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Case Study</Link></li>
+          <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Contact Us</Link></li>
         </ul>
         <div className="flex flex-col space-y-4 mt-8 items-center px-4">
         <div className=" md:flex items-center gap-4 right-20">

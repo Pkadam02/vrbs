@@ -1,5 +1,11 @@
+'use client';
+
 import AboutUsPage from "../../Component/AboutUsPage";
 
 export default function AboutUs() {
-  return <AboutUsPage />;
+  return (
+    <main>
+      <AboutUsPage />
+    </main>
+  );
 }

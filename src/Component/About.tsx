@@ -4,10 +4,11 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import Link from "next/link"; // Import Link component
+import { useRouter } from "next/navigation";
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -107,10 +108,13 @@ export default function About() {
               </li>
             </ul>
 
-            <Link href="/aboutus" className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 lg:w-40 md:w-auto">
+            <button
+              onClick={() => router.push("/aboutus")}
+              className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 md:w-auto"
+            >
               Know More
               <span className="text-gray-500 text-xl">→</span>
-            </Link>
+            </button>
           </div>
 
           {/* Right Visual / Charts */}
