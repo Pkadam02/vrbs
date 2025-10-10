@@ -106,7 +106,7 @@ export default function About() {
               </li>
             </ul>
 
-            <button className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-full md:w-auto">
+            <button className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 md:w-auto">
               Know More
               <span className="text-gray-500 text-xl">→</span>
             </button>

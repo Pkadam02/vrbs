@@ -53,7 +53,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       <div className={`fixed inset-y-0 right-0 w-full max-w-sm bg-yellow-300 z-[90] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden overflow-y-auto`}>
         <div className="flex justify-end p-4">
           <button onClick={() => setIsOpen(false)} className="text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors duration-200">
-            Close
+
           </button>
         </div>
         <ul className="flex flex-col items-center space-y-6 font-medium py-6">
