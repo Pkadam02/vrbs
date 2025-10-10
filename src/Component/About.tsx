@@ -38,7 +38,7 @@ export default function About() {
     gsap.fromTo(
       ".about-text-content",
       { opacity: 0, x: -900 },
-      { opacity: 1, x: 0, duration: 2.9, ease: "power3.out",
+      { opacity: 1, x: 0, duration: 1.9, ease: "power3.out",
         scrollTrigger: {
           trigger: ".about-text-content",
           start: "top 80%",

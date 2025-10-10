@@ -13,7 +13,7 @@ export default function WhoWeAre() {
     gsap.fromTo(
       ".whoweare-title",
       { opacity: 0, y: -200 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out",
+      { opacity: 1, y: 0, duration: 0.5, ease: "power3.out",
         scrollTrigger: {
           trigger: ".whoweare-title",
           start: "top 85%",
@@ -26,7 +26,7 @@ export default function WhoWeAre() {
     gsap.fromTo(
       ".whoweare-image",
       { opacity: 0, x: -900 },
-      { opacity: 1, x: 0, duration: 2.8, ease: "power3.out",
+      { opacity: 1, x: 0, duration: 1.5, ease: "power3.out",
         scrollTrigger: {
           trigger: ".whoweare-image",
           start: "top 85%",

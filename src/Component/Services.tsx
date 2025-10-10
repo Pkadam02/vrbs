@@ -12,7 +12,7 @@ export default function Services() {
       gsap.fromTo(
         "#services h2",
         { opacity: 0, y: 300 },
-        { opacity: 1, y: 0, duration: 1.7, ease: "power3.out",
+        { opacity: 1, y: 0, duration: 1.2, ease: "power3.out",
           scrollTrigger: {
             trigger: "#services h2",
             start: "top 85%",
@@ -32,7 +32,7 @@ export default function Services() {
           { 
             opacity: 1, 
             x: 0, 
-            duration: 2.8, 
+            duration: 1.8, 
             ease: "power3.out",
             scrollTrigger: {
               trigger: card,
@@ -48,7 +48,7 @@ export default function Services() {
       gsap.fromTo(
         ".services-know-more-btn",
         { opacity: 0, y: 200 },
-        { opacity: 1, y: 0, duration: 1.8, ease: "power2.out",
+        { opacity: 1, y: 0, duration: 1.2, ease: "power2.out",
           scrollTrigger: {
             trigger: ".services-know-more-btn",
             start: "top 85%",
