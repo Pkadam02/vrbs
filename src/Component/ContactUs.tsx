@@ -9,7 +9,7 @@ export default function ContactUs() {
   const [formStatus, setFormStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
-
+  
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -251,8 +251,8 @@ export default function ContactUs() {
                 Get in Touch
               </h2>
               <p className="text-gray-600 mb-6">
-                Whether you're looking to automate processes, leverage AI, or
-                transform your entire business model, we're here to help.
+                Whether you&apos;re looking to automate processes, leverage AI, or transform your
+                entire business model, we&apos;re here to help.
               </p>
               <div className="space-y-6">
                 <div className="flex items-center">
@@ -293,8 +293,7 @@ export default function ContactUs() {
                 Free Consultation
               </h2>
               <p className="text-gray-600 mb-6">
-                Schedule a free 30-minute consultation to discuss your digital
-                transformation goals.
+                Schedule a free 30-minute consultation to discuss your digital transformation goals.
               </p>
               <button className="inline-flex items-center bg-[#1C1C57] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#1C1C57] transition-colors">
                 Book a Call <ArrowRight className="ml-2 h-5 w-5" />

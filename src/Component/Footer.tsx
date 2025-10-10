@@ -39,7 +39,7 @@ export default function Footer() {
         }
       );
 
-      gsap.utils.toArray(".footer-column").forEach((column: any, index) => {
+      (gsap.utils.toArray(".footer-column") as HTMLElement[]).forEach((column, index) => {
         gsap.fromTo(
           column,
           { opacity: 0, y: 50, rotationX: 15 },
