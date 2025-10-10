@@ -118,7 +118,7 @@ export default function ContactUs() {
         {/* Header */}
         <div className="text-center mb-12 contact-header">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            Let's Build Your{" "}
+            Let&apos;s Build Your{" "}
             <span className="text-yellow-300">Digital Future</span>
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -135,7 +135,7 @@ export default function ContactUs() {
                 Send us a Message
               </h2>
               <p className="text-gray-600 mb-6">
-                Fill out the form below and we'll respond within 24 hours.
+                Fill out the form below and we&apos;ll respond within 24 hours.
               </p>
 
               {formStatus === "success" ? (
