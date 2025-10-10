@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTA() {
 
@@ -64,9 +65,9 @@ export default function CTA() {
               Accelerate Growth <br /> & Modernize Your
               <br />Tech?
             </h1>
-            <button className="bg-[#FF4D6A] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#E0445D] transition-colors w-full sm:w-auto max-w-sm">
+            <Link href="/contact" className="bg-[#FF4D6A] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#E0445D] transition-colors w-full sm:w-auto max-w-sm">
               Book Appointment
-            </button>
+            </Link>
           </div>
           
           {/* Right Illustration */}

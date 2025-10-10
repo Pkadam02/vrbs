@@ -1,6 +1,7 @@
 "use client";
 import gsap from "gsap";
 import { useEffect } from "react";
+import Link from "next/link";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function WhoWeAre() {
@@ -115,9 +116,12 @@ export default function WhoWeAre() {
               </ul>
             </div>
             <div className="mt-8 sm:mt-10">
-          <button className="bg-[#1C1C57] text-white px-6 py-3 sm:px-8 sm:py-3.5 font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto whoweare-btn">
-          Book Free Growth Call
-          </button>
+            <Link
+  href="/contact"
+  className="bg-[#1C1C57] text-white px-6 py-3 sm:px-8 sm:py-3.5 font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto whoweare-btn inline-block text-center"
+>
+  Book Free Growth Call
+</Link>
         </div>
   
           </div>

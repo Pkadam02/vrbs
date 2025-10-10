@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 import gsap from "gsap";
 
 export default function HeroSection() {
@@ -89,12 +90,13 @@ export default function HeroSection() {
 
         {/* ===== CTA Buttons ===== */}
         <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
-          <button className="bg-[#1C1C57] text-white px-8 py-3 font-semibold hover:opacity-90 transition border-2 border-[#1C1C57] w-full sm:w-auto">
-            Book a Free Growth Call
-          </button>
-          <button className="border-2 border-[#1C1C57] text-[#1C1C57] px-8 py-3 font-semibold hover:bg-[#1C1C57] hover:text-white transition w-full sm:w-auto">
-            Get a call 📞
-          </button>
+        <Link href="/contact" className="bg-[#1C1C57] text-white px-8 py-3 font-semibold hover:opacity-90 transition border-2 border-[#1C1C57] w-full sm:w-auto text-center">
+  Book a Free Growth Call
+</Link>
+
+<Link href="/contact" className="border-2 border-[#1C1C57] text-[#1C1C57] px-8 py-3 font-semibold hover:bg-blue hover:text-white transition w-full sm:w-auto text-center">
+  Get a call 📞
+</Link>
         </div>
       </div>
 

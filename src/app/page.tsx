@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <main data-scroll-container>
-      <Navbar isOpen={isNavbarOpen} setIsOpen={setIsNavbarOpen} />
+     
       <Hero data-scroll-section />
       <Partners data-scroll-section />
       <About data-scroll-section />
@@ -46,10 +46,8 @@ export default function Home() {
       <WhoWeAre data-scroll-section />
       <Methodology data-scroll-section />
       <CaseStud data-scroll-section />
-      
       <Testimonials data-scroll-section />
       <CTA data-scroll-section />
-      <Footer data-scroll-section />
 
       <button
         id="back-to-top"
