@@ -19,12 +19,58 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
 
       {/* Desktop navigation */}
       <ul className="hidden lg:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--hcolor)] font-medium text-sm">
-      <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">About</Link></li>
-        <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Services</Link></li>
-        <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Methodology</Link></li>
-        <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Case Study</Link></li>
-        <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Contact Us</Link></li>
-      </ul>
+ 
+  <li>
+    <Link
+      href="/#about"
+      onClick={() => setIsOpen(false)}
+      className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
+    >
+      <span className="relative z-10">About</span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/#services"
+      onClick={() => setIsOpen(false)}
+      className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
+    >
+      <span className="relative z-10">Services</span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/#methodology"
+      onClick={() => setIsOpen(false)}
+      className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
+    >
+      <span className="relative z-10">Methodology</span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/#casestudy"
+      onClick={() => setIsOpen(false)}
+      className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
+    >
+      <span className="relative z-10">Case Study</span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/contact"
+      onClick={() => setIsOpen(false)}
+      className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
+    >
+      <span className="relative z-10">Contact Us</span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+    </Link>
+  </li>
+</ul>
 
       <div className="hidden lg:flex items-center text-[var(--hcolor)] gap-4 lg:mr-20 text-sm">
         +91 7524963552 <br />

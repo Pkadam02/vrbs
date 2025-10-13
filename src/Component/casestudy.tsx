@@ -119,10 +119,19 @@ const CaseStudies: React.FC = () => {
                 {study.description}
               </p>
 
-              <button className="flex items-center gap-1 text-sm text-gray-700 border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 transition casestudy-button">
-                {study.buttonText}
-                <span className="text-base">↳</span>
-              </button>
+              <button
+  className="relative flex items-center gap-1 text-sm text-gray-700 border border-gray-300 rounded-full px-4 py-2 overflow-hidden group transition-all duration-500"
+>
+  {/* Text + Arrow */}
+  <span className="relative z-10 flex items-center gap-1 transition-colors duration-500 group-hover:text-black">
+    {study.buttonText}
+    <span className="text-base group-hover:text-black">↳</span>
+  </span>
+
+  {/* Animated wave */}
+  <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-full"></span>
+</button>
+
             </div>
           </div>
         ))}
