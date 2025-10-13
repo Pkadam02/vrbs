@@ -4,21 +4,21 @@ import Image from "next/image";
 
 const teamMembers = [
   {
-    name: "Jake Weary",
-    role: "Lead Designer",
-    company: "Flowbase",
+    name: "Akash Pawar",
+    role: "Managing Director & Co-Founder",
+    company: "VRBS",
     img: "/team1.png", // replace with your actual image path
   },
   {
-    name: "Sadie Berlin",
-    role: "UI Designer",
-    company: "Flowbase",
+    name: "Kirti Pawar",
+    role: "Founder",
+    company: "VRBS",
     img: "/team2.png",
   },
   {
-    name: "Dylan Meringu",
-    role: "Art Director",
-    company: "Flowbase",
+    name: "Amol Sasane",
+    role: "COO",
+    company: "VRBS",
     img: "/team3.png",
   },
   
@@ -33,13 +33,13 @@ export default function TeamSection() {
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
               Our Team
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] mt-2">
               VRBS, Team
             </h2>
           </div>
           <p className="text-gray-600 mt-4 md:mt-0 max-w-md text-base leading-relaxed">
-            Uncover hidden patterns, track user behavior, and make data-driven
-            decisions to propel your business forward.
+          Our strength lies in our dedicated specialists, 
+          each committed to delivering exceptional services tailored to your unique business needs.
           </p>
         </div>
 
