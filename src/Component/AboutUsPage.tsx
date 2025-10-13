@@ -105,9 +105,9 @@ export default function AboutUsPage() {
               <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
                 About Us
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
                 Welcome to <br />
-                <span className="text-[var(--hcolor)]">VR Business Solution</span>
+                <span className="text-blue-900">VR Business Solution</span>
               </h2>
               <p className="text-base leading-relaxed text-gray-600">
                 At VR Business Solution, we are pioneers in customer acquisition
@@ -159,7 +159,7 @@ export default function AboutUsPage() {
               
               {/* Left (Text) */}
               <div className="growth-text flex-1 space-y-5">
-                <h3 className="text-2xl sm:text-3xl font-semibold text-[var(--hcolor)]">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-blue-900">
                   Driving Growth Through Smart, Data-Driven Solutions
                 </h3>
 

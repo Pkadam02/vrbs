@@ -18,7 +18,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       </div>
 
       {/* Desktop navigation */}
-      <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--hcolor)] font-medium text-sm">
+      <ul className="hidden lg:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--hcolor)] font-medium text-sm">
       <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">About</Link></li>
         <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Services</Link></li>
         <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Methodology</Link></li>
@@ -26,15 +26,15 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
         <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-blue-700 transition-colors duration-200">Contact Us</Link></li>
       </ul>
 
-      <div className="hidden md:flex items-center text-[var(--hcolor)] gap-4 lg:mr-20 text-sm">
+      <div className="hidden lg:flex items-center text-[var(--hcolor)] gap-4 lg:mr-20 text-sm">
         +91 7524963552 <br />
         +91 8585856595
       </div>
 
       {/* Mobile menu button */}
-      <div className="md:hidden flex items-center z-[100]">
+      <div className="lg:hidden flex items-center z-[100]">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors duration-200">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             ) : (
@@ -45,7 +45,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       </div>
 
       {/* Sidebar */}
-      <div className={`fixed inset-y-0 right-0 w-full max-w-sm bg-yellow-300 z-[90] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden overflow-y-auto`}>
+      <div className={`fixed inset-y-0 right-0 w-full max-w-sm bg-yellow-300 z-[90] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto`}>
         <div className="flex justify-end p-15">
           <button onClick={() => setIsOpen(false)} className="text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors duration-200">
 
@@ -68,7 +68,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
 
       {/* Overlay */}
       {isOpen && (
-        <div onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black bg-opacity-50 z-[80] md:hidden"></div>
+        <div onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black bg-opacity-50 z-[80] lg:hidden"></div>
       )}
     </nav>
   );

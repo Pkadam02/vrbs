@@ -71,7 +71,7 @@ export default function CTA() {
           </div>
           
           {/* Right Illustration */}
-          <div className="relative flex justify-center items-center lg:bottom-[-20px] bottom-[-105] left-[-15] md:left-52 md:right-[192px] h-10 md:max-h-[100px] md:bottom-[-120] md:left-[-10] xl:h-[100px] object-contain w-[120%] md:w-[150%] xl:w-[110%]">
+          <div className="relative flex justify-center items-center lg:bottom-[-20px] bottom-[-105] left-[-15] md:left-52 md:right-[192px] h-10 md:max-h-[100px] md:bottom-[-120] md:left-[-10] xl:h-[100px] object-contain w-[120%] md:w-[150%] lg:w-[160%] xl:w-[130%]">
             {/* Main person image */}
             <img src="/CTA.png" alt="Person with Tablet" className="" />
 

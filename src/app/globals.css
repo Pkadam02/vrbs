@@ -7,11 +7,8 @@
   font-weight: normal;
   font-style: normal;
 }
-*{
-  cursor: none;
-}
 :root{
-  --hcolor: #162e7b; /* Tailwind's blue-900 */
+  --s: ;
 }
 
 html {

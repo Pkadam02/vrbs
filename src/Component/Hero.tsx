@@ -42,10 +42,10 @@ export default function HeroSection() {
     <section
       id="hero"
       className="
-        relative overflow-hidden bg-[#FFD700]
+        relative overflow-hidden bg-[#FFD700] xl:
         flex flex-col md:flex-row items-center justify-between
         px-4 sm:px-8 md:px-12 lg:px-20 py-25
-        w-full min-h-[90vh]
+        xl:w-full min-h-[90vh]
       "
     >
       {/* ===== Left Text Section ===== */}
@@ -54,7 +54,7 @@ export default function HeroSection() {
           className="
             hero-text
             font-the-bold-font font-bold 
-            text-[3.7rem] sm:text-5xl md:text-6xl lg:text-8xl 
+            text-[3.7rem] sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl
             leading-[1.1]
             text-[#1C1C57]
           "
@@ -90,13 +90,21 @@ export default function HeroSection() {
 
         {/* ===== CTA Buttons ===== */}
         <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
-        <Link href="/contact" className="bg-[#1C1C57] text-white px-8 py-3 font-semibold hover:opacity-90 transition border-2 border-[#1C1C57] w-full sm:w-auto text-center">
-  Book a Free Growth Call
+        <Link
+  href="/contact"
+  className="relative overflow-hidden px-8 py-3 font-semibold text-white bg-[#1C1C57] border-2 border-[#1C1C57] w-full sm:w-auto text-center rounded-md group transition-all duration-500"
+>
+  {/* Text */}
+  <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
+    Book a Free Growth Call
+  </span>
+
+  {/* Animated wave */}
+  <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-t-[100%]"></span>
 </Link>
 
-<Link href="/contact" className="border-2 border-[#1C1C57] text-[#1C1C57] px-8 py-3 font-semibold hover:bg-blue hover:text-white transition w-full sm:w-auto text-center">
-  Get a call 📞
-</Link>
+
+
         </div>
       </div>
 

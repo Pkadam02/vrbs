@@ -70,30 +70,27 @@ export default function Services() {
     }, []);
   
   return (
-    <section id="services" className="relative overflow-hidden bg-white
-        flex flex-col md:flex-row items-center justify-between
-        px-4 sm:px-8 md:px-12 lg:px-20 py-25
-        w-full min-h-[90vh]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="relative overflow-hidden bg-white flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-16 md:py-20 min-h-[90vh]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Section Title */}
         <div className="text-center mb-10 md:mb-16">
           <p className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wide">
             Our Services
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--hcolor)] mt-1 sm:mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--hcolor)] mt-1 sm:mt-2">
             We Provide Best Services
           </h2>
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
           {/* Card 1 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/demand-generation.png"
                 alt="Demand Generation"
-                className="w-45 h-55 object-cover rounded-2xl"
+                className="w-full h-full max-w-[180px] max-h-[180px] sm:max-w-[220px] sm:max-h-[220px] object-cover rounded-2xl"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -107,12 +104,12 @@ export default function Services() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/content-syndication.png"
                 alt="Content Syndication"
-                className="w-55 h-55 object-cover rounded-2xl"
+                className="w-full h-full max-w-[180px] max-h-[180px] sm:max-w-[220px] sm:max-h-[220px] object-cover rounded-2xl"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -125,12 +122,12 @@ export default function Services() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/buyer-intent.png"
                 alt="Buyer Intent Leads"
-                className="w-80 h-60 rounded-2xl object-cover"
+                className="w-full h-full max-w-[220px] max-h-[180px] object-cover rounded-2xl"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -144,12 +141,12 @@ export default function Services() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="webinar.png"
                 alt="Event & Webinar Registrations"
-                className="w-60 h-60 object-cover rounded-2xl"
+                className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -163,12 +160,12 @@ export default function Services() {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120 ">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/abm.png"
                 alt="Account-Based Marketing"
-                className="w-50 h-50 object-cover"
+                className="w-full h-full max-w-[180px] max-h-[180px] object-cover"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -182,12 +179,12 @@ export default function Services() {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="software-dev.png"
                 alt="Software Development"
-                className="w-60 h-40 object-cover"
+                className="w-full h-full max-w-[200px] max-h-[150px] object-cover"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
@@ -203,8 +200,13 @@ export default function Services() {
 
         {/* Button */}
         <div className="text-center mt-12">
-          <button className="bg-[#1C1C57] text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto services-know-more-btn">
-            Know More
+          <button
+            className="relative overflow-hidden px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-white bg-[#1C1C57] w-full sm:w-auto group transition-all duration-500"
+          >
+            <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
+              Know More
+            </span>
+            <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-t-[100%]"></span>
           </button>
         </div>
       </div>

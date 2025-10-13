@@ -84,10 +84,10 @@ const CaseStudies: React.FC = () => {
         px-0 sm:px-8 md:px-12 lg:px-20 py-12
         w-full min-h-[90vh]md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p className="text-gray-500 text-base font-semibold uppercase mb-5 text-center">
+      <p className="text-gray-500 text-base font-semibold mb-5 text-center">
             Case Study
           </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-[var(--hcolor)] mt-1 sm:mt-2 text-center mb-10 md:mb-16 casestudy-section-title">
+        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 mt-1 sm:mt-2 text-center mb-10 md:mb-16 casestudy-section-title">
           Our Case Studies
         </h2>
         {caseStudies.map((study, index) => (
@@ -111,7 +111,7 @@ const CaseStudies: React.FC = () => {
                 <span>Case Study</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-semibold text-[var(--hcolor)] mb-3 leading-snug casestudy-title-text">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 leading-snug casestudy-title-text">
                 {study.title}
               </h3>
 

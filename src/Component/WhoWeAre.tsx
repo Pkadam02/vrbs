@@ -99,29 +99,28 @@ export default function WhoWeAre() {
             </h2>
             <div className="space-y-3 sm:space-y-4 text-gray-600 text-base sm:text-lg whoweare-text-content">
               <p>
-                We are a team of passionate professionals dedicated to helping
-                businesses achieve their growth goals through innovative lead
-                generation strategies.
+              We are a growing team of 110+ skilled professionals, expanding steadily as we welcome new clients and projects.
               </p>
               <p>
-                With over 10 years of experience in the industry, we have
-                developed proven methodologies that deliver exceptional results
-                for our clients.
+              Our strength lies in our dedicated specialists, each committed to delivering exceptional services tailored to your unique business needs.
               </p>
               <ul className="space-y-1.5 sm:space-y-2">
-                <li>• Expert team with 10+ years experience</li>
-                <li>• Proven track record with 500+ successful projects</li>
-                <li>• Cutting-edge technology and tools</li>
-                <li>• Dedicated support and consultation</li>
+                <li>• 110+ skilled professionals and growing team</li>
+                <li>• Specialized expertise in demand generation, email marketing, and appointment scheduling</li>
+                <li>• Proven efficiency and precision-driven processes</li>
+                <li>• Tailored solutions for measurable business results</li>
+                <li>• Outsourcing that saves time and maximizes productivity</li>
+                <li>• Commitment to helping you focus on what matters most—leading your business to success</li>
               </ul>
             </div>
             <div className="mt-8 sm:mt-10">
-            <Link
-  href="/contact"
-  className="bg-[#1C1C57] text-white px-6 py-3 sm:px-8 sm:py-3.5 font-semibold hover:bg-blue-700 transition-colors w-full sm:w-auto whoweare-btn inline-block text-center"
->
-  Book Free Growth Call
-</Link>
+              <Link href="/contact" className="relative px-8 py-3 sm:px-10 sm:py-3.5 font-semibold text-white bg-[#1C1C57] rounded-md overflow-hidden group transition-colors duration-500">
+              <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
+              Book Free Growth Call
+              </span>
+              <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-500 ease-in-out rounded-t-[100%]"></span>
+            </Link>
+
         </div>
   
           </div>
