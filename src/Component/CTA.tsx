@@ -56,11 +56,11 @@ export default function CTA() {
     <section id="cta" className="relative py-16 md:py-[28] bg-yellow-300 overflow-hidden min-h-[900px] md:min-h-[1000px] lg:min-h-[10px]">
       {/* Blue curved background */}
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-48 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center min-h-[600px]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-2 md:gap-12 justify-evenly items-center min-h-[600px]">
           {/* Left Content */}
           <div className="py-10 md:py-0">
-            <h1 className="text-5xl sm:text-2xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-2xl md:text-6xl  font-bold text-gray-900 mb-6 leading-tight">
               Ready To <br />
               Accelerate Growth <br /> & Modernize Your
               <br />Tech?
@@ -71,9 +71,9 @@ export default function CTA() {
           </div>
           
           {/* Right Illustration */}
-          <div className="relative flex justify-center items-center h-full">
+          <div className="relative flex justify-center items-center lg:bottom-[-20px] bottom-[-105] left-[-15] md:left-52 md:right-[192px] h-10 md:max-h-[100px] md:bottom-[-120] md:left-[-10] xl:h-[100px] object-contain w-[120%] md:w-[150%] xl:w-[110%]">
             {/* Main person image */}
-            <img src="/CTA.png" alt="Person with Tablet" className="absolute bottom-[-240px] lg:bottom-[-432px] right-[-16px] md:right-[-192px] h-auto max-h-[1200px] md:max-h-[1400px] lg:h-[1250px] object-contain w-[180%] md:w-[130%] lg:w-[500%]" />
+            <img src="/CTA.png" alt="Person with Tablet" className="" />
 
             {/* Floating Card 1 */}
             

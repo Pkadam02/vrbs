@@ -42,7 +42,7 @@ export default function WhoWeAre() {
         { 
           opacity: 1, 
           x: 0, 
-          duration: 1.8, 
+          duration: 0.8, 
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,

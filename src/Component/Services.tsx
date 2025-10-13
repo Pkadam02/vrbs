@@ -88,7 +88,7 @@ export default function Services() {
         {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {/* Card 1 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/demand-generation.png"
@@ -107,7 +107,7 @@ export default function Services() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/content-syndication.png"
@@ -125,7 +125,7 @@ export default function Services() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/buyer-intent.png"
@@ -144,7 +144,7 @@ export default function Services() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="webinar.png"
@@ -163,12 +163,12 @@ export default function Services() {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120 ">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="/abm.png"
                 alt="Account-Based Marketing"
-                className="w-50 h-50 object-cover rounded-2xl"
+                className="w-50 h-50 object-cover"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
@@ -182,12 +182,12 @@ export default function Services() {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square w-full">
+          <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 sm:p-6 text-center service-card aspect-square lg:w-100 lg:h-120">
             <div className="bg-yellow-200 rounded-2xl mb-4 sm:mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
               <img
                 src="software-dev.png"
                 alt="Software Development"
-                className="w-60 h-40 object-cover rounded-2xl"
+                className="w-60 h-40 object-cover"
               />
             </div>
             <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">

@@ -4,20 +4,21 @@ import { useState } from 'react';
 import Link from 'next/link'; // Import Link component
 
 export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (isOpen: boolean) => void }) {
+  console.log("Navbar isOpen: ", isOpen);
   // const [isOpen, setIsOpen] = useState(false);
 
   // REMOVED handleScrollToSection function
 
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 py-4 bg-yellow-300 text-[#1C1C57] border-b border-white">
+    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-2 py-2 bg-yellow-300 text-[#1C1C57] border-b border-white">
       <div className="flex items-center space-x-2 lg:ml-20">
         <Link href="/" onClick={() => setIsOpen(false)}> {/* Use Link component */}
-          <img src="title.png" alt="VR Logo" className="h-10" />
+          <img src="title.png" alt="VR Logo" className="h-12" />
         </Link>
       </div>
 
       {/* Desktop navigation */}
-      <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 font-medium">
+      <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 font-medium text-sm">
       <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">About</Link></li>
         <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Services</Link></li>
         <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Methodology</Link></li>
@@ -25,7 +26,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
         <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Contact Us</Link></li>
       </ul>
 
-      <div className="hidden md:flex items-center gap-4 lg:mr-20">
+      <div className="hidden md:flex items-center gap-4 lg:mr-20 text-sm">
         +91 7524963552 <br />
         +91 8585856595
       </div>
@@ -45,20 +46,20 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
 
       {/* Sidebar */}
       <div className={`fixed inset-y-0 right-0 w-full max-w-sm bg-yellow-300 z-[90] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden overflow-y-auto`}>
-        <div className="flex justify-end p-4">
+        <div className="flex justify-end p-15">
           <button onClick={() => setIsOpen(false)} className="text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors duration-200">
 
           </button>
         </div>
         <ul className="flex flex-col items-center space-y-6 font-medium py-6">
-        <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">About</Link></li>
-          <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Services</Link></li>
-          <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Methodology</Link></li>
-          <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Case Study</Link></li>
-          <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-lg">Contact Us</Link></li>
+        <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">About</Link></li>
+          <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Services</Link></li>
+          <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Methodology</Link></li>
+          <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Case Study</Link></li>
+          <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Contact Us</Link></li>
         </ul>
         <div className="flex flex-col space-y-4 mt-8 items-center px-4">
-        <div className=" md:flex items-center gap-4 right-20">
+        <div className=" md:flex items-center gap-4 right-20 text-base">
         +91 7524963552 <br />
         +91 8585856595
       </div>
