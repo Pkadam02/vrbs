@@ -55,12 +55,12 @@ export default function Partners() {
       <div className="container mx-auto text-center px-4">
         {/* Heading */}
         <div className="partners-heading mx-auto mb-10 max-w-3xl flex items-center justify-center">
-  <span className="h-[2px] w-10 bg-yellow-400 mr-4"></span>
-  <h4 className="text-gray-800 font-semibold text-sm md:text-base tracking-widest uppercase text-center">
-    Trusted By Amazing Brands
-  </h4>
-  <span className="h-[2px] w-10 bg-yellow-400 ml-4"></span>
-</div>
+            <span className="h-[2px] w-10 bg-yellow-400 mr-4"></span>
+            <h3 className="text-[var(--hcolor)] font-semibold text-sm md:text-base tracking-widest uppercase text-center">
+              Trusted By Amazing Brands
+            </h3>
+            <span className="h-[2px] w-10 bg-yellow-400 ml-4"></span>
+          </div>
 
 
         {/* Scrolling Logos */}

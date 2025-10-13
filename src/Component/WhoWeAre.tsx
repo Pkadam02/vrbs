@@ -73,7 +73,7 @@ export default function WhoWeAre() {
     <section className="py-12 md:py-20 relative overflow-hidden bg-white
         flex flex-col md:flex-row items-center justify-between
         px-4 sm:px-8 md:px-12 lg:px-20 w-full min-h-[90vh]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="grid lg:grid-cols-2 gap-y-8 md:gap-x-12 items-start">
           
           {/* Left Image Section */}
@@ -94,7 +94,7 @@ export default function WhoWeAre() {
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">
               Get Started
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-900 whoweare-title">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[var(--hcolor)] whoweare-title">
               Who We Are
             </h2>
             <div className="space-y-3 sm:space-y-4 text-gray-600 text-base sm:text-lg whoweare-text-content">

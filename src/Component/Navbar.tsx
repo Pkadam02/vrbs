@@ -18,7 +18,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       </div>
 
       {/* Desktop navigation */}
-      <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 font-medium text-sm">
+      <ul className="hidden md:flex space-x-6 lg:space-x-8 xl:space-x-10 text-[var(--hcolor)] font-medium text-sm">
       <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">About</Link></li>
         <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Services</Link></li>
         <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Methodology</Link></li>
@@ -26,7 +26,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
         <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200">Contact Us</Link></li>
       </ul>
 
-      <div className="hidden md:flex items-center gap-4 lg:mr-20 text-sm">
+      <div className="hidden md:flex items-center text-[var(--hcolor)] gap-4 lg:mr-20 text-sm">
         +91 7524963552 <br />
         +91 8585856595
       </div>
@@ -51,14 +51,14 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
 
           </button>
         </div>
-        <ul className="flex flex-col items-center space-y-6 font-medium py-6">
+        <ul className="flex flex-col items-center space-y-6 text-[var(--hcolor)] font-medium py-6">
         <li><Link href="/#about" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">About</Link></li>
           <li><Link href="/#services" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Services</Link></li>
           <li><Link href="/#methodology" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Methodology</Link></li>
           <li><Link href="/#casestudy" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Case Study</Link></li>
           <li><Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-gray-300 transition-colors duration-200 text-[#1C1C57] text-base">Contact Us</Link></li>
         </ul>
-        <div className="flex flex-col space-y-4 mt-8 items-center px-4">
+        <div className="flex flex-col space-y-4 mt-8 items-center text-[var(--hcolor)] px-4">
         <div className=" md:flex items-center gap-4 right-20 text-base">
         +91 7524963552 <br />
         +91 8585856595

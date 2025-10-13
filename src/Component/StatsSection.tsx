@@ -51,7 +51,7 @@ export default function StatsSection() {
         <div className="relative">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-center text-center">
             <div>
-              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
+              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--hcolor)]">
                 22K+
               </h3>
               <p className="mt-2 text-gray-500 text-sm sm:text-base">
@@ -60,7 +60,7 @@ export default function StatsSection() {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
+              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--hcolor)]">
                 64M+
               </h3>
               <p className="mt-2 text-gray-500 text-sm sm:text-base">
@@ -69,7 +69,7 @@ export default function StatsSection() {
             </div>
 
             <div>
-              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
+              <h3 className="stat-number text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--hcolor)]">
                 94%
               </h3>
               <p className="mt-2 text-gray-500 text-sm sm:text-base">

@@ -89,9 +89,9 @@ export default function About() {
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
               About
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] leading-tight">
               About VR <br />
-              <span className="text-gray-900">Business Solution</span>
+              <span className="text-[var(--hcolor)]">Business Solution</span>
             </h2>
             <p className="text-base leading-relaxed text-gray-600">
               At VR Business Solution, we are pioneers in customer acquisition

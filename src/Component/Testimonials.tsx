@@ -149,7 +149,7 @@ export default function Testimonials() {
           <p className="text-base text-gray-600 font-semibold uppercase tracking-wide mb-2 testimonial-header-pretitle">
             Client Testimonial
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 testimonial-header-title">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--hcolor)] mb-4 testimonial-header-title">
             What Our Clients Say
           </h2>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed testimonial-header-description">
@@ -190,14 +190,14 @@ export default function Testimonials() {
           <div className="testimonial-nav-arrows z-10">
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 left-0 -translate-y-1/2 bg-yellow-300 p-3 rounded-full text-blue-900 hover:bg-yellow-400 shadow-md transition testimonial-nav-arrow"
+            className="absolute top-1/2 left-0 -translate-y-1/2 bg-yellow-300 p-3 rounded-full text-[var(--hcolor)] hover:bg-yellow-400 shadow-md transition testimonial-nav-arrow"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-0 -translate-y-1/2 bg-yellow-300 p-3 rounded-full text-blue-900 hover:bg-yellow-400 shadow-md transition testimonial-nav-arrow"
+            className="absolute top-1/2 right-0 -translate-y-1/2 bg-yellow-300 p-3 rounded-full text-[var(--hcolor)] hover:bg-yellow-400 shadow-md transition testimonial-nav-arrow"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6" />

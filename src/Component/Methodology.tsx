@@ -61,10 +61,10 @@ const Process: React.FC = () => {
         {/* ===== Left Section (Text Content) ===== */}
         <div className="flex flex-col justify-start text-left lg:col-span-3 lg:mt-8" >
           <div className="relative lg:w-130 sm:w-80 md:left-5  ">
-          <p className="text-gray-500 text-base font-semibold mb-2">
+          <p className="text-gray-500 text-base uppercase font-semibold mb-2">
             Our Process
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 leading-snug methodology-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] leading-snug methodology-title">
             Proven Methodology: <br /> Strategy + Technology
           </h2><br /></div>
         </div>
