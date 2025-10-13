@@ -27,7 +27,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">About</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-black group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
     </Link>
   </li>
   <li>
@@ -37,7 +37,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">Services</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-black group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
     </Link>
   </li>
   <li>
@@ -47,7 +47,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">Methodology</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-black group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
     </Link>
   </li>
   <li>
@@ -57,7 +57,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">Case Study</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-black group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
     </Link>
   </li>
   <li>
@@ -67,7 +67,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">Contact Us</span>
-      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#3B82F6] group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
+      <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-black group-hover:w-full group-hover:left-0 transition-all duration-300 ease-out"></span>
     </Link>
   </li>
 </ul>
@@ -80,7 +80,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
       {/* Mobile menu button */}
       <div className="lg:hidden flex items-center z-[100]">
         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none p-2 rounded-md hover:bg-gray-700 transition-colors duration-200">
-          <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             ) : (

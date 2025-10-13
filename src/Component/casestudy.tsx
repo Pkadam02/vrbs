@@ -84,7 +84,7 @@ const CaseStudies: React.FC = () => {
         px-0 sm:px-8 md:px-12 lg:px-20 py-12
         w-full min-h-[90vh]md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p className="text-gray-500 text-base font-semibold mb-5 text-center">
+      <p className="text-gray-500 text-base font-semibold mb-5 uppercase text-center">
             Case Study
           </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 mt-1 sm:mt-2 text-center mb-10 md:mb-16 casestudy-section-title">
@@ -138,10 +138,14 @@ const CaseStudies: React.FC = () => {
 
         {/* === More Case Studies Button === */}
         <div className="flex justify-center mt-10 md:mt-12">
-          <button className="text-white bg-[#1C1C57] hover:bg-[#0069d9] px-6 py-3 text-base rounded-md transition casestudy-more-button">
-            More Case Studies
-          </button>
-        </div>
+  <button className="relative px-6 py-3 text-base font-semibold text-white bg-[#1C1C57] rounded-md overflow-hidden group transition-colors duration-500">
+    <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
+      More Case Studies
+    </span>
+    <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-500 ease-in-out rounded-t-[100%]"></span>
+  </button>
+</div>
+
       </div>
     </section>
   );

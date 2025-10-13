@@ -41,7 +41,7 @@ export default function About() {
     gsap.fromTo(
       ".about-text-content",
       { opacity: 0, x: -900 },
-      { opacity: 1, x: 0, duration: 1.9, ease: "power3.out",
+      { opacity: 1, x: 0, duration: 0.9, ease: "power3.out",
         scrollTrigger: {
           trigger: ".about-text-content",
           start: "top 80%",
@@ -89,9 +89,9 @@ export default function About() {
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
               About
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] leading-tight">
               About VR <br />
-              <span className="text-gray-900">Business Solution</span>
+              <span className="text-[var(--hcolor)]">Business Solution</span>
             </h2>
             <p className="text-base leading-relaxed text-gray-600">
               At VR Business Solution, we are pioneers in customer acquisition
@@ -115,12 +115,19 @@ export default function About() {
             </ul>
 
             <button
-              onClick={() => router.push("/aboutus")}
-              className="mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 md:w-auto"
-            >
-              Know More
-              <span className="text-gray-500 text-xl">→</span>
-            </button>
+  onClick={() => router.push("/aboutus")}
+  className="relative mt-6 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2 text-gray-700 w-40 md:w-auto overflow-hidden group"
+>
+  {/* Text + Arrow */}
+  <span className="relative z-10 flex items-center gap-2 transition-colors duration-500 group-hover:text-black">
+    Know More
+    <span className="text-gray-500 group-hover:text-black text-xl">→</span>
+  </span>
+
+  {/* Animated wave */}
+  <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-full"></span>
+</button>
+
           </div>
 
           {/* Right Visual / Charts */}

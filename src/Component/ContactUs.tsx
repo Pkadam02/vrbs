@@ -225,13 +225,17 @@ export default function ContactUs() {
                     ></textarea>
                   </div>
                   <button
-                    type="submit"
-                    disabled={formStatus === "submitting"}
-                    className="inline-flex items-center bg-[#1C1C57] text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-600 transition-colors"
-                  >
-                    {formStatus === "submitting" ? "Sending..." : "Send Message"}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </button>
+  type="submit"
+  disabled={formStatus === "submitting"}
+  className="relative inline-flex items-center font-semibold text-white bg-[#1C1C57] px-6 py-3 rounded-md overflow-hidden group transition-colors duration-500 disabled:opacity-70"
+>
+  <span className="relative z-10 flex items-center transition-colors duration-500 group-hover:text-black">
+    {formStatus === "submitting" ? "Sending..." : "Send Message"}
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </span>
+  <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-500 ease-in-out rounded-t-[100%]"></span>
+</button>
+
 
                   {formStatus === "error" && (
                     <p className="text-red-600 mt-4">
@@ -295,9 +299,14 @@ export default function ContactUs() {
               <p className="text-gray-600 mb-6">
                 Schedule a free 30-minute consultation to discuss your digital transformation goals.
               </p>
-              <button className="inline-flex items-center bg-[#1C1C57] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#1C1C57] transition-colors">
-                Book a Call <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
+              <button className="relative inline-flex items-center font-semibold text-white bg-[#1C1C57] px-6 py-3 rounded-md overflow-hidden group transition-colors duration-500">
+  <span className="relative z-10 flex items-center transition-colors duration-500 group-hover:text-black">
+    Book a Call
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </span>
+  <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-500 ease-in-out rounded-t-[100%]"></span>
+</button>
+
             </div>
           </div>
         </div>
