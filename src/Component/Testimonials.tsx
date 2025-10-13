@@ -149,7 +149,7 @@ export default function Testimonials() {
           <p className="text-base text-gray-600 font-semibold uppercase tracking-wide mb-2 testimonial-header-pretitle">
             Client Testimonial
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 testimonial-header-title">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-4 testimonial-header-title">
             What Our Clients Say
           </h2>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed testimonial-header-description">

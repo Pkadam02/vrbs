@@ -33,7 +33,7 @@ export default function TeamSection() {
             <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">
               Our Team
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--hcolor)] mt-2">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mt-2">
               VRBS, Team
             </h2>
           </div>

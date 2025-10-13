@@ -56,7 +56,7 @@ export default function Partners() {
         {/* Heading */}
         <div className="partners-heading mx-auto mb-10 max-w-3xl flex items-center justify-center">
             <span className="h-[2px] w-10 bg-yellow-400 mr-4"></span>
-            <h3 className="text-[var(--hcolor)] font-semibold text-sm md:text-base tracking-widest uppercase text-center">
+            <h3 className="text-blue-900 font-semibold text-sm md:text-base tracking-widest uppercase text-center">
               Trusted By Amazing Brands
             </h3>
             <span className="h-[2px] w-10 bg-yellow-400 ml-4"></span>

@@ -159,9 +159,9 @@ export default function AboutUsPage() {
               
               {/* Left (Text) */}
               <div className="growth-text flex-1 space-y-5">
-                <h3 className="text-2xl sm:text-3xl font-semibold text-blue-900">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-blue-900">
                   Driving Growth Through Smart, Data-Driven Solutions
-                </h3>
+                </h2>
 
                 <p className="text-lg leading-relaxed text-gray-700">
                   At{" "}

@@ -77,7 +77,7 @@ export default function Services() {
           <p className="text-sm sm:text-base text-gray-500 font-medium uppercase tracking-wide">
             Our Services
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--hcolor)] mt-1 sm:mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mt-1 sm:mt-2">
             We Provide Best Services
           </h2>
         </div>
@@ -93,7 +93,7 @@ export default function Services() {
                 className="w-full h-full max-w-[180px] max-h-[180px] sm:max-w-[220px] sm:max-h-[220px] object-cover rounded-2xl"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Demand Generation
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -112,7 +112,7 @@ export default function Services() {
                 className="w-full h-full max-w-[180px] max-h-[180px] sm:max-w-[220px] sm:max-h-[220px] object-cover rounded-2xl"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Content Syndication
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -130,7 +130,7 @@ export default function Services() {
                 className="w-full h-full max-w-[220px] max-h-[180px] object-cover rounded-2xl"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Buyer Intent Leads
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -149,7 +149,7 @@ export default function Services() {
                 className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Event & Webinar Registrations
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -168,7 +168,7 @@ export default function Services() {
                 className="w-full h-full max-w-[180px] max-h-[180px] object-cover"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Account-Based Marketing (ABM)
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -187,7 +187,7 @@ export default function Services() {
                 className="w-full h-full max-w-[200px] max-h-[150px] object-cover"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[var(--hcolor)] mb-2 sm:mb-3">
+            <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-2 sm:mb-3">
               Software Development
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">

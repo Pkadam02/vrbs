@@ -60,7 +60,7 @@ export default function CTA() {
         <div className="grid lg:grid-cols-2 gap-2 md:gap-12 justify-evenly items-center min-h-[600px]">
           {/* Left Content */}
           <div className="py-10 md:py-0">
-            <h1 className="text-5xl sm:text-2xl md:text-6xl  font-bold text-[var(--hcolor)] mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-2xl md:text-6xl  font-bold text-blue-900 mb-6 leading-tight">
               Ready To <br />
               Accelerate Growth <br /> & Modernize Your
               <br />Tech?

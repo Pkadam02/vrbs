@@ -96,11 +96,11 @@ const CaseStudies: React.FC = () => {
             className="grid md:grid-cols-2 gap-y-8 md:gap-x-12 items-center mb-16 casestudy-card"
           >
             {/* === Image Section === */}
-            <div className="flex justify-center items-center p-6 sm:p-8 casestudy-image-container">
+            <div className=" flex justify-center items-center p-6 sm:p-8 casestudy-image-container">
               <img
                 src={study.img}
                 alt={study.title}
-                className="rounded-lg w-full max-w-xs sm:max-w-sm h-auto object-contain"
+                className="rounded-lg w-full max-w-xs sm:max-w-sm h-auto object-contain "
               />
             </div>
 
@@ -111,7 +111,7 @@ const CaseStudies: React.FC = () => {
                 <span>Case Study</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 leading-snug casestudy-title-text">
+              <h3 className="text-xl sm:text-2xl font-semibold text-blue-900 mb-3 leading-snug casestudy-title-text">
                 {study.title}
               </h3>
 

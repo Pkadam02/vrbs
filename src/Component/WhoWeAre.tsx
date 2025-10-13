@@ -94,7 +94,7 @@ export default function WhoWeAre() {
           <p className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">
               Get Started
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-[var(--hcolor)] whoweare-title">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-blue-900 whoweare-title">
               Who We Are
             </h2>
             <div className="space-y-3 sm:space-y-4 text-gray-600 text-base sm:text-lg whoweare-text-content">

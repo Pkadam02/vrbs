@@ -7,11 +7,8 @@
   font-weight: normal;
   font-style: normal;
 }
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --hcolor: #1e3a8a;
+:root{
+  --s: ;
 }
 
 html {

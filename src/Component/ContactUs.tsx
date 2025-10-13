@@ -117,7 +117,7 @@ export default function ContactUs() {
       <div className="container mx-auto px-4 lg:px-50">
         {/* Header */}
         <div className="text-center mb-12 contact-header">
-          <h1 className="text-5xl font-bold text-[var(--hcolor)] mb-4">
+          <h1 className="text-5xl font-bold text-blue-900 mb-4">
             Let&apos;s Build Your{" "}
             <span className="text-yellow-300">Digital Future</span>
           </h1>
@@ -131,7 +131,7 @@ export default function ContactUs() {
           {/* Left: Form */}
           <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 contact-form">
             <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold text-[var(--hcolor)] mb-6">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">
                 Send us a Message
               </h2>
               <p className="text-gray-600 mb-6">
@@ -251,7 +251,7 @@ export default function ContactUs() {
           <div className="w-full lg:w-1/2 px-4 space-y-8">
             {/* Get in Touch */}
             <div className="bg-white p-8 rounded-lg shadow-md contact-right-card">
-              <h2 className="text-2xl font-semibold text-[var(--hcolor)] mb-6">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">
                 Get in Touch
               </h2>
               <p className="text-gray-600 mb-6">
@@ -293,7 +293,7 @@ export default function ContactUs() {
 
             {/* Free Consultation */}
             <div className="bg-yellow-50 p-8 rounded-lg shadow-md contact-consultation-card">
-              <h2 className="text-2xl font-semibold text-[var(--hcolor)] mb-6">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">
                 Free Consultation
               </h2>
               <p className="text-gray-600 mb-6">
