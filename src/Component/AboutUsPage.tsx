@@ -6,6 +6,8 @@ import Image from "next/image";
 import StatsSection from "@/Component/StatsSection";
 import { Cat } from "lucide-react";
 import CTA from "./CTA";
+import TeamSection from "@/Component/TeamSection";
+
 
 export default function AboutUsPage() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -93,10 +95,10 @@ export default function AboutUsPage() {
       <section
         ref={sectionRef}
         id="aboutus"
-        className="relative overflow-hidden bg-white flex flex-col md:flex-row items-center justify-between px-0 sm:px-8 md:px-12 lg:px-20 py-35 w-full min-h-[90vh] md:py-50 lg:py-20 bg-white"
+        className="relative overflow-hidden bg-white flex flex-col md:flex-row items-center justify-between px-0 sm:px-8 md:px-12 lg:px-10 py-35 w-full min-h-[90vh] md:py-50 lg:py-20 bg-white"
         data-scroll-section
       >
-        <div className="container mx-auto px-4 sm:px-10 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-10 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Left text */}
             <div className="space-y-2 lg:pl-16 about-text-content">
@@ -217,6 +219,7 @@ export default function AboutUsPage() {
       </section>
 
       <StatsSection />
+      <TeamSection />
       <CTA />
     </>
   );
