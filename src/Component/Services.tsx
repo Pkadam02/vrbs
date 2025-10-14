@@ -45,18 +45,18 @@ export default function Services() {
         );
       });
 
-      // Animate "Know More" button
-      gsap.fromTo(
-        ".services-know-more-btn",
-        { opacity: 0, y: 200 },
-        { opacity: 1, y: 0, duration: 1.2, ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".services-know-more-btn",
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          }
-        }
-      );
+      // // Animate "Know More" button
+      // gsap.fromTo(
+      //   ".services-know-more-btn",
+      //   { opacity: 0, y: 200 },
+      //   { opacity: 1, y: 0, duration: 1.2, ease: "power2.out",
+      //     scrollTrigger: {
+      //       trigger: ".services-know-more-btn",
+      //       start: "top 85%",
+      //       toggleActions: "play none none reverse",
+      //     }
+      //   }
+      // );
   
       // Smooth scroll for buttons with 'scroll-to-services' class (if any)
       const buttons = document.querySelectorAll(".scroll-to-services");
