@@ -70,7 +70,7 @@ export default function WhoWeAre() {
   }, []);
 
   return (
-    <section className="py-12 md:py-20 relative overflow-hidden bg-white
+    <section className="scroll-mt-24 py-12 md:py-20 relative overflow-hidden bg-white
         flex flex-col md:flex-row items-center justify-between
         px-4 sm:px-8 md:px-12 lg:px-20 w-full min-h-[90vh]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">

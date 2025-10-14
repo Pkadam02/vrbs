@@ -142,7 +142,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="relative bg-gradient-to-b from-yellow-300 via-white to-yellow-300 py-24 overflow-hidden">
+    <section id="testimonials" className="scroll-mt-24 relative bg-gradient-to-b from-yellow-300 via-white to-yellow-300 py-24 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl relative z-10">
         {/* Header */}
         <div className="text-center mb-16">

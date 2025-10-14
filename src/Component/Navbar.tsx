@@ -63,7 +63,7 @@ export default function Navbar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOp
   <li>
     <Link
       href="/contact"
-      onClick={() => setIsOpen(false)}
+      onClick={() => setIsOpen(true)}
       className="relative px-6 py-1 font-semibold text-[#1C1C57] inline-block text-center overflow-hidden group"
     >
       <span className="relative z-10">Contact Us</span>

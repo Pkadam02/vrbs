@@ -53,7 +53,7 @@ export default function CTA() {
   }, []);
 
   return (
-    <section id="cta" className="relative py-16 md:py-[28] bg-yellow-300 overflow-hidden min-h-[900px] md:min-h-[1000px] lg:min-h-[10px]">
+    <section id="cta" className="scroll-mt-24 relative py-16 md:py-[28] bg-yellow-300 overflow-hidden min-h-[900px] md:min-h-[1000px] lg:min-h-[10px]">
       {/* Blue curved background */}
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

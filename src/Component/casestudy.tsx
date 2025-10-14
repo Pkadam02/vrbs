@@ -79,9 +79,9 @@ const CaseStudies: React.FC = () => {
   }, []);
 
   return (
-    <section id="casestudy" className="py-25 bg-white relative overflow-hidden bg-white
+    <section id="casestudy" className=" bg-white relative overflow-hidden bg-white
         flex flex-col md:flex-row items-center justify-between
-        px-0 sm:px-8 md:px-12 lg:px-20 py-12
+        px-0 sm:px-8 md:px-12 lg:px-20 py-12 data-scroll-section
         w-full min-h-[90vh]md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <p className="text-gray-500 text-base font-semibold mb-5 uppercase text-center">

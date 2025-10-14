@@ -50,7 +50,7 @@ export default function Partners() {
     <section
       id="partners"
       ref={sectionRef}
-      className="pt-16 bg-white overflow-hidden relative"
+      className="pt-16 bg-white overflow-hidden relative py-10"
     >
       <div className="container mx-auto text-center px-4">
         {/* Heading */}

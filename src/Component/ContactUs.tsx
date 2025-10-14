@@ -112,7 +112,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden flex flex-col md:flex-row items-center justify-between
+    <section ref={sectionRef} className="scroll-mt-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between
         px-0 sm:px-8 md:px-12 lg:px-20 w-full min-h-[90vh]md:py-20 bg-white py-30 bg-white">
       <div className="container mx-auto px-4 lg:px-50">
         {/* Header */}

@@ -1,10 +1,11 @@
 "use client";
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Services() {
-
+  const [showMore, setShowMore] = useState(false);
+  
     useEffect(() => {
       gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +71,7 @@ export default function Services() {
     }, []);
   
   return (
-    <section id="services" className="relative overflow-hidden bg-white flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-16 md:py-20 min-h-[90vh]">
+    <section id="services" className="relative overflow-hidden bg-white flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 py-12  md:py-15 min-h-[90vh]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Section Title */}
         <div className="text-center mb-10 md:mb-16">
@@ -199,16 +200,181 @@ export default function Services() {
         </div>
 
         {/* Button */}
-        <div className="text-center mt-12">
-          <button
-            className="relative overflow-hidden px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-white bg-[#1C1C57] w-full sm:w-auto group transition-all duration-500"
-          >
-            <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
-              Know More
-            </span>
-            <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-t-[100%]"></span>
-          </button>
-        </div>
+        {/* Button */}
+        {!showMore && (
+          <div className="text-center mt-12">
+            <button
+              onClick={() => {
+                setShowMore(true);
+              
+                setTimeout(() => {
+                  const newCards = document.querySelectorAll(".extra-service-card");
+              
+                  (gsap.utils.toArray(newCards) as HTMLElement[]).forEach((card, index) => {
+                    // First 3 from left, next 3 from right
+                    const animationProps =
+                      index < 3
+                        ? { opacity: 0, x: -700 } // slide from left
+                        : { opacity: 0, x: 700 }; // slide from right
+              
+                    gsap.fromTo(
+                      card,
+                      animationProps,
+                      {
+                        opacity: 1,
+                        x: 0,
+                        duration: 1.8,
+                        ease: "power3.out",
+                        delay: index * 0.1, // staggered
+                        scrollTrigger: {
+                          trigger: card,
+                          start: "top 90%", // triggers when card enters viewport
+                          toggleActions: "play none none reverse",
+                        },
+                      }
+                    );
+                  });
+                }, 100); // delay ensures elements have mounted
+              }}          
+          className="relative overflow-hidden px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-white bg-[#1C1C57] w-full sm:w-auto group transition-all duration-500 services-know-more-btn"
+        >
+          <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
+            Know More
+          </span>
+          <span className="absolute inset-0 bg-yellow-300 top-full group-hover:top-0 transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-t-[100%]"></span>
+        </button>
+
+          </div>
+        )}
+        {showMore && (
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 extra-service-section">
+            {/* Digital Marketing */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/digital-marketing.png"
+                  alt="Digital Marketing"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                Digital Marketing
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                We run multi-platform campaigns across search, social, and programmatic
+                channels to boost visibility, capture attention, and drive conversions.
+                Our approach blends SEO, paid advertising, content marketing, and
+                analytics to deliver sustainable growth. Digital is where your customers
+                live—our strategies ensure you’re visible before your competitors.
+              </p>
+            </div>
+
+            {/* Lead Generation */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/lead-gen.png"
+                  alt="Lead Generation"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                Lead Generation
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                We use precision targeting and value-driven outreach to attract, nurture,
+                and qualify leads. From top-of-funnel awareness to sales-ready
+                engagement, our process delivers warm, conversion-focused leads. Quality
+                leads mean your sales team spends less time chasing and more time
+                closing.
+              </p>
+            </div>
+
+            {/* Email Marketing */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/email-marketing.png"
+                  alt="Email Marketing"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                Email Marketing
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                We design and execute personalized email campaigns that resonate with
+                your target audience—whether you’re nurturing existing relationships,
+                driving event attendance, or promoting content. Email remains the
+                highest ROI channel for B2B marketing—ours are built for engagement and
+                conversion.
+              </p>
+            </div>
+
+            {/* Appointment Generation */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/appointment-gen.png"
+                  alt="Appointment Generation"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                Appointment Generation
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                We identify decision-makers, validate their interest, and set up
+                confirmed meetings with your sales team—removing the friction of cold
+                outreach. Your sales team stays focused on closing deals, while we
+                handle the time-consuming prospecting work.
+              </p>
+            </div>
+
+            {/* SDR-as-a-Service */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/sdr.png"
+                  alt="SDR-as-a-Service"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                SDR-as-a-Service
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                Our in-house Sales Development Representatives (SDRs) operate as a
+                seamless extension of your sales team—driving consistent, high-quality
+                lead generation and appointment setting. We leverage your brand voice,
+                combined with our enriched data and proven outreach strategies, to
+                ensure every conversation adds value and builds your pipeline.
+              </p>
+            </div>
+
+            {/* Onshore and Offshore Services */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 text-center service-card extra-service-card">
+              <div className="bg-yellow-200 rounded-2xl mb-5 flex items-center justify-center h-48 sm:h-60 overflow-hidden">
+                <img
+                  src="/onshore-offshore.png"
+                  alt="Onshore and Offshore Services"
+                  className="w-full h-full max-w-[200px] max-h-[200px] object-cover rounded-2xl"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3">
+                Onshore and Offshore Services
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                We help businesses achieve efficiency and scalability through both
+                onshore and offshore services. Our onshore solutions ensure seamless
+                collaboration within your local market, while offshore services provide
+                access to global talent and cost advantages—delivering optimized,
+                sustainable growth.
+              </p>
+            </div>
+          </div>
+        )}
+
       </div>
     </section>
   );

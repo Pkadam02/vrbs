@@ -41,10 +41,10 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="
+      className="scroll-mt-24
         relative overflow-hidden bg-[#FFD700] xl:
         flex flex-col md:flex-row items-center justify-between
-        px-4 sm:px-8 md:px-12 lg:px-20 py-25
+        px-4 sm:px-8 md:px-12 lg:px-20 py-20
         xl:w-full min-h-[90vh]
       "
     >

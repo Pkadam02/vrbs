@@ -26,7 +26,7 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="scroll-mt-24 py-20 bg-white">
       <div className="container mx-auto px-6 sm:px-10 lg:px-30">
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           <div>

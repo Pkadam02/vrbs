@@ -52,7 +52,7 @@ export default function Home() {
       <button
         id="back-to-top"
         onClick={scrollToTop}
-        className={`fixed bottom-6 right-6 p-4 rounded-full bg-yellow-300 text-white shadow-lg transition-all duration-500 hover:bg-yellow-400 focus:outline-none z-50 hover:scale-110 ${showButton && !isNavbarOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        className={`fixed bottom-6 right-6 p-4 rounded-full bg-yellow-300 text-blue-900 shadow-lg transition-all duration-500 hover:bg-yellow-400 focus:outline-none z-50 hover:scale-110 ${showButton && !isNavbarOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         aria-label="Back to top"
       >
         <ArrowUp className="h-5 w-5" />
