@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export default function s1() {
+export default function S1() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
